@@ -26,10 +26,9 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-/.codeintel/codeintel.log
-/.codeintel/config
-/.codeintel/README.txt
-/.codeintel/VERSION
+/.codeintel/
 /*.db
 /example/media/
 /example/static/
+/image_gallery.sublime-project
+/image_gallery.sublime-workspace
