@@ -1,0 +1,7 @@
+{% if gallery.all %}
+    <div class="gallery">
+    {% for img in gallery.all %}
+        <a class="gallery-image hover-lighting" href="{{ img.image.url }}" rel="prettyPhoto[id{{ prettyPhoto_id }}]"><img src="{{ img.thumbnail.url }}"></a>
+    {% endfor %}
+    </div>
+{% endif %}

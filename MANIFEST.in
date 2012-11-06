@@ -1,0 +1,3 @@
+recursive-include image_gallery/locale *.po *.mo
+recursive-include image_gallery/static *.css *.js *.gif *.png
+recursive-include image_gallery/templates *.html

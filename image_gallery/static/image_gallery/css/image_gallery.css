@@ -1,0 +1,31 @@
+.button-delete {
+	position: absolute;
+	top: 0px;
+	left: 0px
+}
+
+.gallery-image {
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.071);
+	line-height: 1;
+	padding: 4px;
+	margin: 3px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.gallery:before,
+.gallery:after {
+  display: table;
+  content: "";
+}
+
+.gallery:after {
+	clear: both;
+}
+
+.hover-lighting img:hover{
+	opacity: 0.85
+}

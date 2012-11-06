@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block extra-links %}
+    <link href="{{ STATIC_URL }}image_gallery/css/prettyPhoto.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}image_gallery/css/image_gallery.css" rel="stylesheet" type="text/css" />
+    <script src="{{ STATIC_URL }}image_gallery/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}image_gallery/js/init.js" type="text/javascript"></script>
+{% endblock extra-links %}
+
+{% block content %}
+    <h2>Galleries</h2>
+    <h4><a href="{% url add %}">Add</a></h4>
+    <ul>
+    {% load image_gallery_extras %}
+    {% for object in object_list %}
+        Author: {{ object.author }}
+        {% show_gallery object.gallery %}
+        <hr>
+    {% endfor %}
+    </ul>
+{% endblock %}
+

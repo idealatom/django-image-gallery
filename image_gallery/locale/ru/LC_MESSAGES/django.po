@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-31 20:28+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: forms.py:9
+msgid "Too many images"
+msgstr "Слишком много изображений"
+
+#: views.py:44
+#, python-format
+msgid "Maximal image size is %(w)sx%(h)s (Your image size is %(w_)sx%(h_)s)."
+msgstr ""
+"Максимально допустимые размеры изображения - %(w)sx%(h)s (размер вашего "
+"изображения - %(w_)sx%(h_)s)"
+
+#: views.py:46
+#, python-format
+msgid "Minimal image size is %(w)sx%(h)s (Your image size is %(w_)sx%(h_)s)."
+msgstr ""
+"Минимально допустимые размеры изображения - %(w)sx%(h)s (размер вашего "
+"изображения - %(w_)sx%(h_)s)"
+
+#: views.py:48
+#, python-format
+msgid "Unsupported image format. Supported formats are %s"
+msgstr "Неподдерживаемый формат изображения. Поддерживаемые форматы: %s"
+
+#: views.py:50
+#, python-format
+msgid "Maximal image file size is %s"
+msgstr "Максимально допустимый размер файла - %s"
+
+#: views.py:52
+msgid "Can not upload image. Please try again."
+msgstr "Невозможно загрузить картинку. Попробуйте ещё раз."
+
+#: views.py:54
+msgid "You must authorize to upload image."
+msgstr "Чтобы загрузить изображение необходимо авторизоваться."
+
+#: templates/image_gallery/gallery.html:6
+msgid "Image upload error:"
+msgstr "Ошибка загрузки изображения:"

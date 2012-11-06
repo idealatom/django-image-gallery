@@ -1,0 +1,27 @@
+{% load i18n %}
+{% load staticfiles %}
+<input {% if max_images %}max_images="{{ max_images }}"{% endif %} type="file" id="{{ id }}-file" name="image_gallery-file" onChange="GalleryImageChange('{{ id }}')">
+<div class="alert alert-error" id="{{ id }}-errors-block" style="display: none">
+    <button class="close" data-dismiss="alert">×</button>
+    <p><strong>{% trans "Image upload error:" %} </strong></p>
+    <hr/>
+    <p id="{{ id }}-errors-text"></p>
+</div>
+<div class="gallery" id="{{ id }}-thumbnails"><br/>
+    <img class="gallery-image" id="{{ id }}-loading" src="{% static "image_gallery/img/ajax-loader.gif" %}" style="display:none">
+    <span class="button-delete" style="display:none">
+        <img src="{% static "image_gallery/img/deleteImage.png" %}"/>
+    </span>
+    {% for img in images %}
+        <div class="gallery-image" id="{{ id }}-div{{ img.id }}" onclick="GalleryImageDelete('{{ id }}', '{{ img.id }}')" onmouseover="showButton('{{ id }}', '{{ img.id }}')" onmouseout="hideButton('{{ id }}', '{{ img.id }}')">
+            <div>
+                <img id="{{ id }}-img{{ img.id }}" src="{{ img.src }}">
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    initGallery('{% url image_gallery:upload %}')
+    showFileButton('{{ id }}');
+</script>

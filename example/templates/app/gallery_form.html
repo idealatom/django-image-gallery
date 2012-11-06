@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block extra-links %}
+    {{ form.media }}
+{% endblock extra-links %}
+
+{% block content %}
+    <h2>Add Gallery</h2>
+	<form action="" method="post" id="example-form" enctype="multipart/form-data" >{% csrf_token %}
+	    {{ form }}
+	    <button>Add</button>
+	</form>
+{% endblock %}

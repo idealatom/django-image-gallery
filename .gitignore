@@ -1,0 +1,8 @@
+*.pyc
+/.codeintel/codeintel.log
+/.codeintel/config
+/.codeintel/README.txt
+/.codeintel/VERSION
+/*.db
+/example/media/
+/example/static/
