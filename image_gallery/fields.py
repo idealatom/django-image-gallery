@@ -21,7 +21,7 @@ class GalleryField(models.ManyToManyField):
 from south.modelsinspector import add_introspection_rules
 rules = [
     (
-        (models.fields.files.ImageField),
+        (models.fields.files.ImageField, ),
         [],
         {
             "max_images": ["max_images", {"default": None}],
