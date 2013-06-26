@@ -9,7 +9,7 @@
 
 {% block content %}
     <h2>Galleries</h2>
-    <h4><a href="{% url add %}">Add</a></h4>
+    <h4><a href="{% url 'add' %}">Add</a></h4>
     <ul>
     {% load image_gallery_extras %}
     {% for object in object_list %}

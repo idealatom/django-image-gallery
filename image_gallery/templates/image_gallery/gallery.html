@@ -22,6 +22,6 @@
 </div>
 
 <script type="text/javascript">
-    initGallery('{% url image_gallery:upload %}')
+    initGallery("{% url 'image_gallery:upload' %}")
     showFileButton('{{ id }}');
 </script>
